@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+
+body {
+	background-color: #FFF629;
+	/*background-image: url('../img/apphabit_city_splash.PNG');*/
+	/*background-repeat: no-repeat;*/
+
+}
+
+.lightbrown {
+	color:#FFF629;
+	font-size: 100px;
+	background-color: #474747;
+	font-family: 'Roboto';
+}
+
+a{font-family: 'Roboto'; padding: 3px;}
+
+a:link{color: #474747; background-color: #FAC548; text-decoration: none;}
+a:hover{color: #FAC548; background-color: #59C93E; text-decoration: none;}
+a:active{color: #474747; background-color: #FAC548; text-decoration: none;}
+
+img {
+	 width: auto;
+	 height: auto;
+}
+
+#play_btn {
+	border-radius: 12px;
+	padding: 12px 28px;
+
+a#play_btn.button {
+	margin: 0 50px 0 0;
+	/*padding-top: 225px;*/
+	/*width: 200px;*/
+	background-color: #ff6f69;
+	text-align: center;
+	font-family: 'Roboto 400';
+	font-size: 100px;
+	
+}
+
+#main {
+	margin: auto;
+	padding-top: 225px;
+	width: 200px;
+	text-align: center;
+	font-family: 'Roboto 400';
+	font-size: 100px;
+}
+
+/*Flip*/
+/*.flip3D{ width:240px; height:200px; margin:10px; float:left; }*/
+
+div#tile_0.hvr-buzz-out.hvr-ripple-out.flip3D > .front {
+	position:absolute;
+	-webkit-transform: perspective( 71px ) rotateY( 0deg );
+	transform: perspective( 71px ) rotateY( 0deg );
+	background: url("img/apphabit_city9peach.png"); width:71px; height:71px; border-radius: 5px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
+div#tile_0.hvr-buzz-out.hvr-ripple-out.flip3D > .back {
+	position:absolute;
+	-webkit-transform: perspective( 71px ) rotateY( 180deg );
+	transform: perspective( 71px ) rotateY( 180deg );
+	background: #80BFFF; width:71px; height:71px; border-radius: 5px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
+div#tile_0.hvr-buzz-out.hvr-ripple-out.flip3D:hover > .front {
+	-webkit-transform: perspective( 71px ) rotateY( -180deg );
+	transform: perspective( 71px ) rotateY( -180deg );
+}
+div#tile_0.hvr-buzz-out.hvr-ripple-out.flip3D:hover > .back {
+	-webkit-transform: perspective( 71px ) rotateY( 0deg ); 
+	transform: perspective( px ) rotateY( 0deg );
+}
+
+/*modal*/
+
+img#logo {
+	width: 290px;
+	height: auto;
+	text-align: center;
+
+}
+
+div.form-group {
+	width: auto;
+	height: auto;
+}
+
+/*ABOUT Page*/
+h2#contact-us {
+	margin: 100px 0 0 0;
+}
+div#contact-here.container {
+	margin: 100px 0 0 0;
+	width: auto;
+	height: 600px;
+}
+p.text-xs-center {
+	color: #fff;
+}
