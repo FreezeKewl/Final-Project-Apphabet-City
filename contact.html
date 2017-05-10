@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CONTACT</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/apphabit_city.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="shortcut icon" type="image/png" href="img/ac_cards.png"/>
+	<link href="css/hover-min.css" rel="stylesheet" media="all"/>
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+<style type="text/css"> 
+
+body {
+	background-color: #88d8d8;
+}
+
+nav.navbar.navbar-default {
+
+	background-color: #bae1ff;
+}
+div.navbar-header {
+	width: auto;
+	height: auto;
+	background-color: #bae1ff;
+}
+
+div#bs-example-navbar-collapse-1 {
+	background-color: #bae1ff;
+}
+ 
+img#logo {
+	margin: 7px 0 0 5px;
+	width: 175px;
+	height: auto;
+	/*padding: 25px;*/
+}
+
+/* Refresh Button */
+li {
+	background-color: #d888b0;
+	margin: 25px 50px 0 0;
+	
+}
+
+a.hvr-grow {
+	background-color: #ffb3ba;
+	color: 	#3b5998;
+	font-family: Roboto;
+
+}
+
+button.navbar-toggle.collapsed {
+	background-color: #d888b0;
+	color: #e5dd24;
+	border-style: solid;
+	border-color: #fff97e #e5dd24 #e5dd24 #fff97e;
+}
+
+	/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+/* Buzz Out */
+@-webkit-keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.hvr-buzz-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
+  -webkit-animation-name: hvr-buzz-out;
+  animation-name: hvr-buzz-out;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/* Ripple Out */
+@-webkit-keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+.hvr-ripple-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+}
+.hvr-ripple-out:before {
+  content: '';
+  position: absolute;
+  border: #bae1ff solid 2px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+  -webkit-animation-name: hvr-ripple-out;
+  animation-name: hvr-ripple-out;
+}
+
+/* Wobble Vertical */
+@-webkit-keyframes hvr-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes hvr-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.hvr-wobble-vertical {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-wobble-vertical:hover, .hvr-wobble-vertical:focus, .hvr-wobble-vertical:active {
+  -webkit-animation-name: hvr-wobble-vertical;
+  animation-name: hvr-wobble-vertical;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+</style>
+
+<script>
+
+</script>
+
+	
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="navbar-header">
+      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+        		<span class="glyphicon glyphicon-menu-hamburger"></span>
+      		</button>
+      
+	    	<img src="img/apphabit_city10.png">
+	    	</div>
+
+	    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav nav-pills navbar-right">
+		  			<li role="presentation"><a href="home.html" class="hvr-grow">REFRESH</a></li>
+					<li role="presentation"><a href="about.html" class="hvr-grow">About</a></li>
+					<li role="presentation"><a href="contact.html" class="hvr-grow">Contact</a></li>
+				</ul>
+			</div>
+
+	    	<!-- <ul class="nav nav-pills navbar-right">
+	  			<li role="presentation"><a href="home.html">OPTIONS</a></li>
+			</ul> -->			
+		</div>
+
+	</nav> 
+
+<!-- New Modal -->
+<br><br><br><br><br><br><br>
+
+<div class="container" id='contact-here'>
+<div >
+  <h2 id="contact-us">Contact Us</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Contact Now</button>
+
+</div>
+<br><br><br><br><br><br><br><br><br>
+
+<footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-g" style="background-color: rgb(50, 50, 50); padding-top: 25px; padding-bottom: 25px;">
+    
+    <div>
+        <p class="text-xs-center">Copyright (c) 2017 Claude White</p>
+    </div>
+
+</footer>
+</div>
+
+
+  <!-- Modal -->
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <aclass="modal-title"><img id="logo" src="img/apphabit_city10-4.png" width="290" height="86"></a>
+        </div>
+        <div class="modal-body">
+
+         <!-- Inside Model -->
+
+     <section class="mbr-section mbr-after-navbar" id="form1-p" style="background-color: rgb(173, 220, 245); padding-top: 25px; padding-bottom: 50px;">
+    
+    <div class="mbr-section mbr-section__container mbr-section__container--middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-xs-center">
+                    <h3 class="mbr-section-title display-2">CONTACT US</h3>
+                    <small class="mbr-section-subtitle">Improve your memory through play, today!.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mbr-section mbr-section-nopadding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4  col-lg-offset-1" data-form-type="formoid">
+
+
+                    <div data-form-alert="true">
+                        <div hidden="" data-form-alert-success="true" class="alert alert-form alert-success text-xs-center">Thanks for filling out form!</div>
+                    </div>
+<!-- Form -->
+
+                    <form id='form' action="mail.php" method="post" data-form-title="CONTACT FORM">
+
+                        <input type="hidden" value="1s6wLi5gPFPeRsxC9+RjpFUQD0ku9NyCeJlGQ+iUZJ6eQrPB5MiHb+P/pOEV6i+NPVXYS5jJHs3ed7cneYDgor6WgZU80/yRncqHCAyF5S6N2WfYKmyToc895fS7AQDY" data-form-email="true">
+
+                        <div class="row row-xs-offset">
+
+                            <div class="col-xs-4 col-md-4 col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-p-name">Name<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-p-name">
+                                </div>
+                            </div>
+
+                            <div class="col-xs-4 col-md-4 col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-p-email">Email<span class="form-asterisk">*</span></label>
+                                    <input type="email" class="form-control" name="email" required="" data-form-field="Email" id="form1-p-email">
+                                </div>
+                            </div>
+
+                            <div class="col-xs-4 col-md-4 col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-p-phone">Phone</label>
+                                    <input type="tel" class="form-control" name="phone" data-form-field="Phone" id="form1-p-phone">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group col-xs-12">
+                            <label class="form-control-label" for="form1-p-message">Message</label>
+                            <textarea class="form-control" name="message" rows="7" data-form-field="Message" id="form1-p-message"></textarea>
+                        </div>
+
+                        <div><button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">CONTACT US</button></div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+         <!-- End of Inside Modal -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+				</form>
+			</div>
+		</div>
+
+	</section>
+</div>
+
+
+
+<script>
+	document.getElementById("form").onsubmit = function() {
+		alert('Hello, ' + document.getElementById('form1-p-name').value);
+	};
+
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/touch-swipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/smooth-scroll/smooth-scroll.js"></script>
+  <script src="assets/viewport-checker/jquery.viewportchecker.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  <script src="assets/formoid/formoid.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/dropdown/js/script.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
