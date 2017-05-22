@@ -4,25 +4,40 @@
 	<meta charset="utf-8">
 	<title>Apphabit City Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+
+	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<!-- <link href="css/hover-min.css" rel="stylesheet" media="all">
+	<link href="css/font-awesome.min.css" rel="stylesheet"> -->
+<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
 	<link rel="stylesheet" type="text/css" href="css/apphabit_city.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<link rel="shortcut icon" type="image/png" href="img/ac_cards.png"/>
-	<link href="css/hover-min.css" rel="stylesheet" media="all"/>
-	<link href="css/font-awesome.min.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
+
 <!-- Nav Logo -->
-<style type="text/css"> 
+<style type="text/css">
+
 body {
-	background-color: #88d8d8;
+	background-color: #96ceb4;
+	width: auto;
+	height: auto;
 }
 
 nav.navbar.navbar-default {
-
 	background-color: #bae1ff;
+	margin: 0px;
+
 }
 div.navbar-header {
 	width: auto;
@@ -30,9 +45,32 @@ div.navbar-header {
 	background-color: #bae1ff;
 }
 
+ul.nav.nav-pills.navbar-right {
+	margin: 30px 30px 0 0;
+}
+/* Refresh Button */
+li {
+	background-color: #d888b0;
+	margin: 5px 25px 20px 0;
+}
+
+a.hvr-grow {
+	background-color: #ffb3ba;
+	color: 	#3b5998;
+	font-family: Roboto;
+}
+
 div#bs-example-navbar-collapse-1 {
 	background-color: #bae1ff;
 }
+/*Hamburger*/
+button.navbar-toggle.collapsed {
+	margin: 25px 35px 0 0;
+}
+button.navbar-toggle {
+	margin: 25px 35px 0 0;
+}
+/*End Hamburger*/
  
 img#logo {
 	margin: 7px 0 0 5px;
@@ -41,18 +79,11 @@ img#logo {
 	/*padding: 25px;*/
 }
 
-/* Refresh Button */
-li {
-	background-color: #d888b0;
-	margin: 25px 50px 0 0;
-	
-}
-
-a.hvr-grow {
-	background-color: #ffb3ba;
-	color: 	#3b5998;
-	font-family: Roboto;
-
+/*img#logo_home {
+	margin: 7px 0 0 5px;
+	width: 175px;
+	height: auto;
+	/*padding: 25px;*/
 }
 
 button.navbar-toggle.collapsed {
@@ -61,6 +92,23 @@ button.navbar-toggle.collapsed {
 	border-style: solid;
 	border-color: #fff97e #e5dd24 #e5dd24 #fff97e;
 }
+
+div.container {
+	background-color: #96ceb4;
+	background-size: cover;
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+div.row {
+	background-size: cover;
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
 
 
 /* Board Box */
@@ -72,14 +120,14 @@ button.navbar-toggle.collapsed {
 		box-shadow: 1px 1px 25px 15px #ffb3ba inset;
 		width: auto;
 		height: auto;
-		padding: 25px;
-		margin: 10px;
+		padding: 20px;
+		margin: 30px;
 	}
 
 /* Tiles/Cards */
 	div#memory_board > div {
 		background: url(img/apphabit_city9peach.PNG) no-repeat;
-		border:  4px solid;
+		border: 4px solid;
 		border-color: #ffffff #ccc420 #ccc420 #ffffff;
 		border-radius: 6px;
 		box-shadow: 1px 1px 8px 5px #ffb3ba inset;
@@ -87,15 +135,21 @@ button.navbar-toggle.collapsed {
 		width: 71px;
 		height: 71px;
 		float: left;
-		margin: 5px 5px;
-		padding: 5px;
+		/*margin: 5px 5px;
+		padding: 5px;*/
 		font-size: 40px;
 		cursor: pointer;
 		text-align: center;
 	}
-
+div#tile_1.hvr-buzz-out.hvr-ripple-out.flip3D > div {
+	height: 100%;
+	width: 100%;
+	box-sizing: initial;
+}
+	
 
 	/* Grow */
+
 .hvr-grow {
     display: inline-block;
     vertical-align: middle;
@@ -330,8 +384,6 @@ button.navbar-toggle.collapsed {
   animation-iteration-count: 1;
 }
 
-
-
 </style>
 
 <script>
@@ -347,7 +399,7 @@ button.navbar-toggle.collapsed {
         		<span class="glyphicon glyphicon-menu-hamburger"></span>
       		</button>
       
-	    	<img src="img/apphabit_city10.png">
+	    	<img id="logo_home" src="img/apphabit_city10.png">
 	    	</div>
 
 	    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -397,14 +449,14 @@ function newBoard() {
 	var output = '';
 	memory_array.memory_tile_shuffle();
 	for(var i = 0; i < memory_array.length; i++){
-		output += '<div class="hvr-buzz-out hvr-ripple-out flip3D" id="tile_'+i+'" onclick="memoryFlipTile(this,\''+memory_array[i]+'\')"></div>';
+		output += '<div class="hvr-buzz-out hvr-ripple-out flip3D " id="tile_'+i+'" onclick="memoryFlipTile(this,\''+memory_array[i]+'\')"></div>';
 	}
 	document.getElementById('memory_board').innerHTML = output;
 }
 function memoryFlipTile(tile,val){
 	if(tile.innerHTML == "" && memory_values.length < 2){
-		tile.style.background = '#FFF';
-		tile.innerHTML = val;
+		tile.style.background = '#FFF ';
+		tile.innerHTML = '<img src ="img/' + val +'.PNG">';
 		if(memory_values.length == 0) {
 			memory_values.push(val);
 			memory_tile_ids.push(tile.id);
@@ -490,9 +542,9 @@ function memoryFlipTile(tile,val){
 <script>
 newBoard();
 </script>
+
 <!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 </html>

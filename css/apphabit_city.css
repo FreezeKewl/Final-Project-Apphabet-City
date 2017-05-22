@@ -20,10 +20,11 @@ a{font-family: 'Roboto'; padding: 3px;}
 a:link{color: #474747; background-color: #FAC548; text-decoration: none;}
 a:hover{color: #FAC548; background-color: #59C93E; text-decoration: none;}
 a:active{color: #474747; background-color: #FAC548; text-decoration: none;}
-
+/*back of tiles*/
 img {
-	 width: auto;
-	 height: auto;
+	 width: 95%;
+	 height: 95%;
+	 padding: 0 2px 2px 0;
 }
 
 #play_btn {
